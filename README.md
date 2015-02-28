@@ -6,14 +6,14 @@ This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) for [Do
 
 ### Base Docker Image
 
-* [mikeholczer/python](https://registry.hub.docker.com/u/mikeholczer/debian/)
+* [mikeholczer/docker-armhf-python](https://registry.hub.docker.com/u/mikeholczer/docker-armhf-python/)
 
 
 ### Installation
 
 1. Install [Docker](https://www.docker.com/). (I need to provide more detail about getting it running on raspberry pi 2)
 
-2. Download [automated build](https://registry.hub.docker.com/u/dockerfile/nodejs/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull mikeholczer/docker-armhf-nodejs`
+2. Download [image](https://registry.hub.docker.com/u/mikeholczer/docker-armhf-nodejs/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull mikeholczer/docker-armhf-nodejs`
 
 
 
