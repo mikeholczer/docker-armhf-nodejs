@@ -1,11 +1,11 @@
 #
 # Node.js Dockerfile
 #
-# https://github.com/dockerfile/nodejs
+# based on https://github.com/dockerfile/nodejs
 #
 
 # Pull base image.
-FROM dockerfile/python
+FROM mikeholczer/armhf-nodejs
 
 # Install Node.js
 RUN \
