@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM mikeholczer/armhf-nodejs
+FROM mikeholczer/docker-armhf-python
 
 # Install Node.js
 RUN \
