@@ -1,31 +1,30 @@
 ## Node.js Dockerfile
 
 
-This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/dockerfile/nodejs/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
+This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) for [Docker](https://www.docker.com/)'s (https://registry.hub.docker.com/u/mikeholczer/docker-armhf-nodejs/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/). I would have made it an automated build, but it seems that armhf architectures aren't supported.
 
 
 ### Base Docker Image
 
-* [dockerfile/python](http://dockerfile.github.io/#/python)
+* [mikeholczer/python](https://registry.hub.docker.com/u/mikeholczer/debian/)
 
 
 ### Installation
 
-1. Install [Docker](https://www.docker.com/).
+1. Install [Docker](https://www.docker.com/). (I need to provide more detail about getting it running on raspberry pi 2)
 
-2. Download [automated build](https://registry.hub.docker.com/u/dockerfile/nodejs/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull dockerfile/nodejs`
+2. Download [automated build](https://registry.hub.docker.com/u/dockerfile/nodejs/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull mikeholczer/docker-armhf-nodejs`
 
-   (alternatively, you can build an image from Dockerfile: `docker build -t="dockerfile/nodejs" github.com/dockerfile/nodejs`)
 
 
 ### Usage
 
-    docker run -it --rm dockerfile/nodejs
+    docker run -it --rm mikeholczer/docker-armhf-nodejs
 
 #### Run `node`
 
-    docker run -it --rm dockerfile/nodejs node
+    docker run -it --rm mikeholczer/docker-armhf-nodejs node
 
 #### Run `npm`
 
-    docker run -it --rm dockerfile/nodejs npm
+    docker run -it --rm mikeholczer/docker-armhf-nodejs npm
